@@ -4,6 +4,7 @@
 body {
   background-color: #f3f1ff;
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 main {
   display: flex;
@@ -22,6 +23,47 @@ hr {
   border: 1px solid #d1d1d1;
   margin: 30px 0;
 }
+
+/* Header */
+header {
+  background: #562EFF;
+  display: flex;
+  justify-content: center;
+}
+.container-heading {
+  width: 870px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.logo img {
+  width: 40px;
+  margin: 0 10px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+
+
 
 /* === Top Player Styles === */
 .section-title {
@@ -123,7 +165,8 @@ Media Query
 -------------- */
 
 @media only screen and (max-width: 480px) {
-  .container {
+  .container,
+  .container-heading {
     width: 100%;
   }
   .players,
@@ -141,7 +184,8 @@ Media Query
 
 }
 @media only screen and (min-width: 481px) and (max-width: 992px) {
-  .container {
+  .container,
+  .container-heading {
     width: 100%;
   }
   .players,
